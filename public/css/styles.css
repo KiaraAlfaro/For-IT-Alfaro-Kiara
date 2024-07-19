@@ -1,0 +1,77 @@
+nav{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.719);
+    padding: 10px;  
+}
+
+main{
+    margin-top: 2%;
+    text-align: center;
+}
+
+#buscador{
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+.contenedor-us{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.usuario{
+    background-color: rgba(0, 0, 0, 0.719);
+    width:75%;
+    color: white;
+    border-radius: 10px;
+    margin: 10%;
+}
+
+.us-imagen{width: 50%;}
+
+.agregar{
+    background-color: rgba(0, 0, 0, 0.719);
+    width: 100%;
+    height: 70%;
+}
+
+.agregar i{
+    font-size: 70px;
+    color: white;
+}
+
+#form-nuevo-usuario h4{
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+#form-nuevo-usuario button{
+    background-color:rgba(0, 0, 0, 0.719); 
+    border: inherit;
+    color: white;
+    padding: 5px;
+}
+
+@media screen and (max-width :1024px){
+
+    .contenedor-us{
+        width: 100%;
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media screen and (max-width :769px){
+
+    .contenedor-us{ grid-template-columns: 100%;}
+
+    #buscador{width: 70%;}
+
+    #form-nuevo-usuario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #form-nuevo-usuario input{margin-bottom: 10px;}
+}
